@@ -43,7 +43,7 @@
 
 - name: KRPopupview
   i18n: jalpc
-  gh_user: dengkairong
+  gh_user: KLIANS
   repo: KRPopupview
   img: /static/assets/img/landing/dh.gif
   desc: KRPopupview with animation effects.
@@ -52,7 +52,7 @@
 
 - name: KRKeyboard
   i18n: jalpc
-  gh_user: dengkairong
+  gh_user: KLIANS
   repo: KRKeyboard
   img: /static/assets/img/landing/keyboardLogo.jpg
   desc: A multi-function keyboard.
