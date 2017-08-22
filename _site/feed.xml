@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>陈国亮</title>
+    <description>KLIANS blog</description>
+    <link>http://localhost:4000//</link>
+    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 21 Aug 2017 18:48:24 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Aug 2017 18:48:24 +0800</lastBuildDate>
+    <generator>Jekyll v3.5.2</generator>
+    
+      <item>
+        <title>iOS-设置导航栏透明的方法</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)viewWillAppear:(BOOL)animated{
+
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+
+    //去掉透明后导航栏下边的黑边
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+
+    //    如果不想让其他页面的导航栏变为透明 需要重置
+    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:nil];
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Thu, 04 May 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/05/04/iOS-navicationbar-transparency.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/05/04/iOS-navicationbar-transparency.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>2017年4月23日财务状况</title>
+        <description>&lt;h1 id=&quot;2017-04-23-财务状况&quot;&gt;2017-04-23 财务状况&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;资产&quot;&gt;资产&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;钱包&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;现金若干&lt;/td&gt;
+      &lt;td&gt;忽略不计&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;支付宝&lt;/td&gt;
+      &lt;td&gt;938.72&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微信&lt;/td&gt;
+      &lt;td&gt;267.67&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;民生银行&lt;/td&gt;
+      &lt;td&gt;6230.79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;建设银行&lt;/td&gt;
+      &lt;td&gt;8.25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;中国银行&lt;/td&gt;
+      &lt;td&gt;44.49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商证券股票&lt;/td&gt;
+      &lt;td&gt;2181(亏409.03)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;随手记理财&lt;/td&gt;
+      &lt;td&gt;6250.29&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;桔子理财&lt;/td&gt;
+      &lt;td&gt;1293.77&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计资产&lt;/td&gt;
+      &lt;td&gt;17214.99&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;负债&quot;&gt;负债&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;18294.89(含所有利息)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;花呗&lt;/td&gt;
+      &lt;td&gt;3007.13&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商信用卡&lt;/td&gt;
+      &lt;td&gt;9931.98&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;广发信用卡&lt;/td&gt;
+      &lt;td&gt;3582.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;百度有钱&lt;/td&gt;
+      &lt;td&gt;4902.93&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微粒贷&lt;/td&gt;
+      &lt;td&gt;4274.5(含利息)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;网商银行&lt;/td&gt;
+      &lt;td&gt;166.74&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;陈雷&lt;/td&gt;
+      &lt;td&gt;7000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;林域&lt;/td&gt;
+      &lt;td&gt;2000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;谢晓锋&lt;/td&gt;
+      &lt;td&gt;4000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;方总&lt;/td&gt;
+      &lt;td&gt;10000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计负债&lt;/td&gt;
+      &lt;td&gt;67110.22&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;4月应还&quot;&gt;4月应还&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;2003.26&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;网商银行&lt;/td&gt;
+      &lt;td&gt;166.74&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计4月应还&lt;/td&gt;
+      &lt;td&gt;2170&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;5月预计应还&quot;&gt;5月预计应还&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;债主&lt;/th&gt;
+      &lt;th&gt;金额（元）&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;微粒贷&lt;/td&gt;
+      &lt;td&gt;560&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;房租&lt;/td&gt;
+      &lt;td&gt;500&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;招商信用卡&lt;/td&gt;
+      &lt;td&gt;4764.05&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;花呗&lt;/td&gt;
+      &lt;td&gt;1280.96&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;广发信用卡&lt;/td&gt;
+      &lt;td&gt;662.21&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;百度有钱&lt;/td&gt;
+      &lt;td&gt;1634.31&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;分期乐&lt;/td&gt;
+      &lt;td&gt;1889.79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;总计5月应还&lt;/td&gt;
+      &lt;td&gt;11291.32&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//life/2017/04/23/life-finance.html</link>
+        <guid isPermaLink="true">http://localhost:4000//life/2017/04/23/life-finance.html</guid>
+        
+        <category>程序员</category>
+        
+        <category>财务</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
+    
+      <item>
+        <title>C语言中的格式控制符</title>
+        <description>&lt;blockquote&gt;
+  &lt;h3 id=&quot;格式控制符&quot;&gt;格式控制符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	％---格式说明引导符。
+	－---指定左对齐输出。
+	0---指定空位填零。
+	m.n --- 指定输出域宽度及精度。
+	l.h---输出长度的修正。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;格式字符&quot;&gt;格式字符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	%i---输出一个整型数；
+	%d---输出一个整型数；
+	%f---输出一个浮点数；
+	%e---输出一个浮点数，科学计数法；
+	%g---输出一个浮点数，当指数小于-4或者大于5，则运用科学计数法，否则正常显示浮点数；
+	%c---输出一个字符；
+	%o---输出一个八进制的整型数，前面不带0；
+	%#o---输出一个八进制的整型数，前面带0；
+	%x---输出一个十六进制的整型数，前面不带0x；
+	%#x---输出一个十六进制的整型数，前面带0x, 如果x大写，则显示的时候也是大写。
+	%u---不带符号的十进制整数。
+	%%---输出一个%.
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;转义字符&quot;&gt;转义字符：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	\a:蜂鸣，响铃 
+	\b:回退：向后退一格 
+	\f:换页 
+	\n:换行，光标到下行行首 
+	\r:回车，光标到本行行首 
+	\t:水平制表 
+	\v:垂直制表 
+	\\:反斜杠 
+	\':单引号 
+	\&quot;:双引号 
+	\?:问号 
+	\ddd:三位八进制 
+	\xhh:二位十六进制 
+	\0:空字符(NULL),什么都不做 
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;printf的格式控制的完整格式&quot;&gt;printf的格式控制的完整格式：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	%  -  0  m.n  l或h  格式字符
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h3 id=&quot;下面对组成格式说明的各项加以说明&quot;&gt;下面对组成格式说明的各项加以说明：&lt;/h3&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	* %：表示格式说明的起始符号，不可缺少。
+	* -：有-表示左对齐输出，如省略表示右对齐输出。
+	* 0：有0表示指定空位填0,如省略表示指定空位不填。
+	* m.n：m指域宽，即对应的输出项在输出设备上所占的字符数。N指精度。用于说明输出的实型数的小数位数。为指定n时，隐含的精度为n=6位。
+	* l或h:l对整型指long型，对实型指double型。h用于将整型的格式字符修正为short型。
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+&lt;/blockquote&gt;
+
+</description>
+        <pubDate>Mon, 10 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//c/2017/04/10/iOS-c-format.html</link>
+        <guid isPermaLink="true">http://localhost:4000//c/2017/04/10/iOS-c-format.html</guid>
+        
+        <category>C语言</category>
+        
+        
+        <category>C</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-UIWebView获取内容高度和禁用长按手势</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    //获取内容高度
+    float contentHeight = [[_webView stringByEvaluatingJavaScriptFromString:@&quot;document.body.clientHeight&quot;]floatValue];
+    
+    //webview自适应大小
+    CGRect rect = _webView.frame;
+    rect.size.height = contentHeight;
+    _webView.frame = rect;
+    
+    //回调代理通知高度改变
+    if ([self.delegate respondsToSelector:@selector(qianKunWebCellHeightChange:)]) {
+        [self.delegate qianKunWebCellHeightChange:contentHeight];
+    }
+    
+    //禁用长按手势
+    [_webView stringByEvaluatingJavaScriptFromString:@&quot;document.documentElement.style.webkitUserSelect='none';&quot;];
+    [_webView stringByEvaluatingJavaScriptFromString:@&quot;document.documentElement.style.webkitTouchCallout='none';&quot;];
+    
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/07/iOS-web-get-height.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/07/iOS-web-get-height.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>UIWebView</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-Git命令大全</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Git是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;1-远程仓库相关命令&quot;&gt;1) 远程仓库相关命令&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	检出仓库：$ git clone git://github.com/jquery/jquery.git
+
+	查看远程仓库：$ git remote -v
+
+	添加远程仓库：$ git remote add [name] [url]
+
+	删除远程仓库：$ git remote rm [name]
+
+	修改远程仓库：$ git remote set-url --push [name] [newUrl]
+
+	拉取远程仓库：$ git pull [remoteName] [localBranchName]
+
+	推送远程仓库：$ git push [remoteName] [localBranchName]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;如果想把本地的某个分支test提交到远程仓库，并作为远程仓库的master分支，或者作为另外一个名叫test的分支，如下：&lt;/em&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	$git push origin test:master         // 提交本地test分支作为远程的master分支
+
+	$git push origin test:test              // 提交本地test分支作为远程的test分支
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;2分支branch操作相关命令&quot;&gt;2）分支(branch)操作相关命令&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	查看本地分支：$ git branch
+
+	查看远程分支：$ git branch -r
+
+	创建本地分支：$ git branch [name] ----注意新分支创建后不会自动切换为当前分支
+
+	切换分支：$ git checkout [name]
+
+	创建新分支并立即切换到新分支：$ git checkout -b [name]
+
+	删除分支：$ git branch -d [name] ---- -d选项只能删除已经参与了合并的分支，对于未有合并的分支是无法删除的。如果想强制删除一个分支，可以使用-D选项
+
+	合并分支：$ git merge [name] ----将名称为[name]的分支与当前分支合并
+
+	创建远程分支(本地分支push到远程)：$ git push origin [name]
+
+	删除远程分支：$ git push origin :heads/[name] 或 $ gitpush origin :[name] 
+
+	*创建空的分支：(执行命令之前记得先提交你当前分支的修改，否则会被强制删干净没得后悔)
+
+	$git symbolic-ref HEAD refs/heads/[name]
+
+	$rm .git/index
+
+	$git clean -fdx
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;3版本tag操作相关命令&quot;&gt;3）版本(tag)操作相关命令&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	查看版本：$ git tag
+
+	创建版本：$ git tag [name]
+
+	删除版本：$ git tag -d [name]
+
+	查看远程版本：$ git tag -r
+
+	创建远程版本(本地版本push到远程)：$ git push origin [name]
+
+	删除远程版本：$ git push origin :refs/tags/[name]
+
+	合并远程仓库的tag到本地：$ git pull origin --tags
+
+	上传本地tag到远程仓库：$ git push origin --tags
+
+	创建带注释的tag：$ git tag -a [name] -m 'yourMessage'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;4-子模块submodule相关操作命令&quot;&gt;4) 子模块(submodule)相关操作命令&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	添加子模块：$ git submodule add [url] [path]
+
+	如：$git submodule add git://github.com/soberh/ui-libs.git src/main/webapp/ui-libs
+
+	初始化子模块：$ git submodule init  ----只在首次检出仓库时运行一次就行
+
+	更新子模块：$ git submodule update ----每次更新或切换分支后都需要运行一下
+
+	删除子模块：（分4步走哦）
+
+	1) $ git rm --cached [path]
+
+	2) 编辑“.gitmodules”文件，将子模块的相关配置节点删除掉
+
+	3) 编辑“ .git/config”文件，将子模块的相关配置节点删除掉
+
+	4) 手动删除子模块残留的目录
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;5忽略一些文件文件夹不提交&quot;&gt;5）忽略一些文件、文件夹不提交&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在仓库根目录下创建名称为“.gitignore”的文件，写入不需要的文件夹名或文件，每个元素占一行即可，如&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	target
+
+	bin
+
+	*.db
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;git-常用命令大全汇集&quot;&gt;Git 常用命令大全汇集&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	git branch 查看本地所有分支
+	git status 查看当前状态 
+	git commit 提交 
+	git branch -a 查看所有的分支
+	git branch -r 查看本地所有分支
+	git commit -am &quot;init&quot; 提交并且加注释 
+	git remote add origin git@192.168.1.119:ndshow
+	git push origin master 将文件给推到服务器上 
+	git remote show origin 显示远程库origin里的资源 
+	git push origin master:develop
+	git push origin master:hb-dev 将本地库与服务器上的库进行关联 
+	git checkout --track origin/dev 切换到远程dev分支
+	git branch -D master develop 删除本地库develop
+	git checkout -b dev 建立一个新的本地分支dev
+	git merge origin/dev 将分支dev与当前分支进行合并
+	git checkout dev 切换到本地dev分支
+	git remote show 查看远程库
+	git add .
+	git rm 文件名(包括路径) 从git中删除指定文件
+	git clone git://github.com/schacon/grit.git 从服务器上将代码给拉下来
+	git config --list 看所有用户
+	git ls-files 看已经被提交的
+	git rm [file name] 删除一个文件
+	git commit -a 提交当前repos的所有的改变
+	git add [file name] 添加一个文件到git index
+	git commit -v 当你用－v参数的时候可以看commit的差异
+	git commit -m &quot;This is the message describing the commit&quot; 添加commit信息
+	git commit -a -a是代表add，把所有的change加到git index里然后再commit
+	git commit -a -v 一般提交命令
+	git log 看你commit的日志
+	git diff 查看尚未暂存的更新
+	git rm a.a 移除文件(从暂存区和工作区中删除)
+	git rm --cached a.a 移除文件(只从暂存区中删除)
+	git commit -m &quot;remove&quot; 移除文件(从Git中删除)
+	git rm -f a.a 强行移除修改后文件(从暂存区和工作区中删除)
+	git diff --cached 或 $ git diff --staged 查看尚未提交的更新
+	git stash push 将文件给push到一个临时空间中
+	git stash pop 将文件从临时空间pop下来
+	git remote add origin git@github.com:username/Hello-World.git
+	git push origin master 将本地项目给提交到服务器中
+	git pull 本地与服务器端同步
+	git push (远程仓库名) (分支名) 将本地分支推送到服务器上去。
+	git push origin serverfix:awesomebranch
+	git fetch 相当于是从远程获取最新版本到本地，不会自动merge
+	git commit -a -m &quot;log_message&quot; (-a是提交所有改动，-m是加入log信息) 本地修改同步至服务器端 ：
+	git branch branch_0.1 master 从主分支master创建branch_0.1分支
+	git branch -m branch_0.1 branch_1.0 将branch_0.1重命名为branch_1.0
+	git checkout branch_1.0/master 切换到branch_1.0/master分支
+	du -hs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h1 id=&quot;举例&quot;&gt;举例&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	mkdir WebApp
+	cd WebApp
+	git init
+	touch README
+	git add README
+	git commit -m 'first commit'
+	git remote add origin git@github.com:daixu/WebApp.git
+	git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 07 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/07/iOS-git-command.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/07/iOS-git-command.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>git</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-iOS中数组求平均值和总和小技巧</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;iOS中数组求平均值和总和小技巧&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/static/assets/img/blog/ios/ios-avg.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/07/iOS-array-avg-sum.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/07/iOS-array-avg-sum.html</guid>
+        
+        <category>iOS</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>程序员职场进阶忠告</title>
+        <description>&lt;div align=&quot;center&quot;&gt;&lt;img src=&quot;/static/assets/img/blog/life/忠言.png&quot; width=&quot;85%&quot; /&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//life/2017/04/06/life-jj.html</link>
+        <guid isPermaLink="true">http://localhost:4000//life/2017/04/06/life-jj.html</guid>
+        
+        <category>程序员</category>
+        
+        <category>工作</category>
+        
+        
+        <category>Life</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-JSONKit编译报错解决方法</title>
+        <description>&lt;p&gt;如果从github上下来的JSONKit在使用的时候报编译错误，可以按如下的方式尝试解决&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1. Build Phases-&amp;gt;Compile Sources,双击JSONKit.m,输入：-fno-objc-arc
+
+2. 修改JSONKit.m文件第680行，修改为object_setClass(array, _JKArrayClass);
+
+3. 修改JSONKit.m文件第932行，修改为object_setClass(dictionary, _JKDictionaryClass);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这个使用再去使用JSONKit库，就没问题了。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/06/iOS-jsonkit-error-handle.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/06/iOS-jsonkit-error-handle.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-单独让某个控制器横屏</title>
+        <description>&lt;h3 id=&quot;ios程序开发中若要单独让某个控制器横屏可以用如下方法&quot;&gt;iOS程序开发中，若要单独让某个控制器横屏，可以用如下方法：&lt;/h3&gt;
+
+&lt;p&gt;在 AppDelegate.h 添加属性：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;//屏幕方向  
+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;@property&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nonatomic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSInteger&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;allowRotation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在 AppDelegate.m 添加方法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window  
+ {  
+
+     if (_allowRotation == 1) {  
+
+         return UIInterfaceOrientationMaskLandscapeRight;  
+           
+     }else {  
+
+         return UIInterfaceOrientationMaskPortrait;  
+
+     }  
+ }  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;可以在跳转控制器中设置:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; HWGoalVC *vc = [[HWGoalVC alloc] init];  
+ [self.navigationController presentViewController:vc animated:YES completion:nil]; 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在目标控制器中设置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+ appDelegate.allowRotation = 1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;在目标控制器返回时设置：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (void)back  
+ {  
+
+     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;  
+
+     appDelegate.allowRotation = 0;  
+
+     [self dismissViewControllerAnimated:YES completion:nil];  
+ } 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;若想隐藏StatusBar，可调用如下方法：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; - (BOOL)prefersStatusBarHidden  
+ {  
+	//iOS7前隐藏StatusBar  
+	[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+	//iOS7以后隐藏StatusBar  	
+	return YES;  
+ }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 06 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/06/iOS-Screen-rotate-headle.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/06/iOS-Screen-rotate-headle.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        <category>横屏</category>
+        
+        <category>开发</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-解决警告“ld: warning: directory not found for option”</title>
+        <description>&lt;p&gt;从项目中删除了某个目录、文件以后，编译出现警告信息：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ld: warning: directory not found for option“XXXXXX”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;很奇怪，为什么已经从项目中删除了文件和文件夹还是报这个警告呢？&lt;/p&gt;
+
+&lt;p&gt;去掉警告的办法如下：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.选择工程, 编译的 (targets)
+
+2.选择 Build Settings 菜单
+
+3.查找 Library Search Paths 和 Framework Search Paths， 删掉编译报warning的路径即OK
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/05/iOS-dimiss-error-info.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/05/iOS-dimiss-error-info.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>Objective-C</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+      <item>
+        <title>iOS-把文字转换成语音播报</title>
+        <description>&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:@&quot;八百标兵奔北坡，北坡炮兵并排跑，炮兵怕把标兵碰，标兵怕碰炮兵炮。&quot;];
+
+//设置发音
+AVSpeechSynthesisVoice *voice = [AVSpeechSynthesisVoice voiceWithLanguage:@&quot;zh-TW&quot;];
+
+utterance.voice = voice;
+
+utterance.rate = 0.1;
+
+//显示所有支持的发音
+NSLog(@&quot;%@&quot;,[AVSpeechSynthesisVoice speechVoices]);
+
+AVSpeechSynthesizer *synth = [[AVSpeechSynthesizer alloc]init];
+
+[synth speakUtterance:utterance];
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Wed, 05 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000//ios/2017/04/05/iOS-How-to-play-sound.html</link>
+        <guid isPermaLink="true">http://localhost:4000//ios/2017/04/05/iOS-How-to-play-sound.html</guid>
+        
+        <category>iOS</category>
+        
+        <category>语音播报</category>
+        
+        <category>Objective-C</category>
+        
+        
+        <category>iOS</category>
+        
+      </item>
+    
+  </channel>
+</rss>

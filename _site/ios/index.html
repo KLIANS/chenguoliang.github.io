@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+
+	
+	    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <meta name="author" content="陈国亮">
+
+  <title>
+    
+        陈国亮|iOS
+    
+  </title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="//static/assets/img/favicon.ico">
+
+  <!-- Main CSS -->
+  <link href="//static/assets/app-20170307.min.css" rel="stylesheet">
+
+  <!-- Main Scripts -->
+  <script src="//static/assets/app-20170307.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var initial = 0;
+      var show = true;
+
+      var toggleSearch = function (visible) {
+        initial = 0;
+        show = !visible;
+        var visibility = visible ? 'block' : 'none';
+
+        $("#search-content").val("");
+        $(".search-tool").css("display", visibility);
+      };
+
+      var shouldToggle = function (time) {
+        var gap = time - initial;
+        initial = time;
+        return gap < 500;
+      };
+
+      $(document).keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        } else if (e.keyCode == 27) {
+          toggleSearch(false);
+        }
+      });
+
+      $("#search-content").keyup(function (e) {
+        var now = new Date().getTime();
+        if (e.keyCode == 17 && shouldToggle(now)) {
+          toggleSearch(show);
+        }
+      });
+
+      $("#close-btn").click(function () {
+        toggleSearch(false);
+      });
+
+      $("#search-btn").click(function() {
+        toggleSearch(true);
+      });
+
+      $.getJSON("//search/cb-search.json")
+        .done(function (data) {
+          if (data.code == 0) {
+            $("#search-content").typeahead({
+              source: data.data,
+              displayText: function (item) {
+                return item.title;
+              },
+              afterSelect: function (item) {
+                window.location.href = item.url;
+              }
+            });
+          }
+        });
+    });
+    $(function(){
+        $("pre").css('display','block');
+    });
+  </script>
+</head>
+
+	
+
+<body id="page-top" class="landing-page">
+
+	
+	    <div class="search-tool"
+      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
+
+    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
+        <img src="//search/img/cb-close.png" id="close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
+    <img src="//search/img/cb-search.png"  id="search-btn"  title="Double click Ctrl"/>
+</div>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="//">陈国亮</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="/blog/"></a></li>
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="//blog/">Blog</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="//ios/">IOS</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="//c/">C</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="//reading/">Reading</a></li>
+                        
+                    
+                        
+                        
+                        <li>
+                        
+                        <a class="page-scroll" href="//life/">Life</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="container">
+                <div class="carousel-caption">
+                </div>
+                <div class="carousel-image wow zoomIn">
+                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back one"></div>
+
+        </div>
+        <div class="item">
+            <div class="container">
+                <div class="carousel-caption blank">
+                </div>
+            </div>
+            <!-- Set background for slide in css -->
+            <div class="header-back two"></div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#inSlider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#inSlider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+	
+
+        <!-- jPages -->
+<script src="//static/assets/jPage-20170307.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  /* initiate the plugin */
+  $("div.pag-holder").jPages({
+      containerID  : "pag-itemContainer",
+      perPage      : 10,  /* num of items per page */
+      startPage    : 1,
+      startRange   : 1,
+      midRange     : 3,
+      endRange     : 1
+  });
+});
+</script>
+
+<div class="row">
+    <div class="col-lg-12 text-center">
+        
+        <div class="navy-line"></div>
+
+        
+
+        
+        <!--  -->
+        
+        
+
+        <h1>iOS</h1>
+
+        
+        <h3>I'm convinced that the only thing that keep me going was that i loved what i did. </h3>
+        <h5>----乔布斯</h5>
+        
+
+        
+
+        
+
+        
+        
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight blog">
+    <div class="row">
+        <ul id="pag-itemContainer" style="list-style:none;">
+            
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/05/04/iOS-navicationbar-transparency.html" class="btn-link">
+                                <h2>iOS-设置导航栏透明的方法</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 4 May 2017</span>
+                            </div>
+                            <p>
+                                - (void)viewWillAppear:(BOOL)animated{
+
+    //设置导航栏背景图片为一个空的image，这样就透明了
+    [self.navigationCont...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">Objective-C</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/05/04/iOS-navicationbar-transparency.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/07/iOS-web-get-height.html" class="btn-link">
+                                <h2>iOS-UIWebView获取内容高度和禁用长按手势</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 7 Apr 2017</span>
+                            </div>
+                            <p>
+                                - (void)webViewDidFinishLoad:(UIWebView *)webView{
+    
+    //获取内容高度
+    float contentHeight = [[...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">UIWebView</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/07/iOS-web-get-height.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/07/iOS-git-command.html" class="btn-link">
+                                <h2>iOS-Git命令大全</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 7 Apr 2017</span>
+                            </div>
+                            <p>
+                                
+  Git是一个很强大的分布式版本控制系统。它不但适用于管理大型开源软件的源代码，管理私人的文档和源代码也有很多优势。
+
+
+
+  1) 远程仓库相关命令
+
+
+	检出仓库：$ git clone...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">git</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/07/iOS-git-command.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/07/iOS-array-avg-sum.html" class="btn-link">
+                                <h2>iOS-iOS中数组求平均值和总和小技巧</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 7 Apr 2017</span>
+                            </div>
+                            <p>
+                                
+  iOS中数组求平均值和总和小技巧
+
+
+
+
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/07/iOS-array-avg-sum.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/06/iOS-jsonkit-error-handle.html" class="btn-link">
+                                <h2>iOS-JSONKit编译报错解决方法</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 6 Apr 2017</span>
+                            </div>
+                            <p>
+                                如果从github上下来的JSONKit在使用的时候报编译错误，可以按如下的方式尝试解决
+
+1. Build Phases-&gt;Compile Sources,双击JSONKit.m,输入：...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">Objective-C</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/06/iOS-jsonkit-error-handle.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/06/iOS-Screen-rotate-headle.html" class="btn-link">
+                                <h2>iOS-单独让某个控制器横屏</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 6 Apr 2017</span>
+                            </div>
+                            <p>
+                                iOS程序开发中，若要单独让某个控制器横屏，可以用如下方法：
+
+在 AppDelegate.h 添加属性：
+
+ //屏幕方向  
+ @property (nonatomic, assign) N...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">Objective-C</button>
+                                    
+                                    <button class="btn btn-white btn-xs">横屏</button>
+                                    
+                                    <button class="btn btn-white btn-xs">开发</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/06/iOS-Screen-rotate-headle.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/05/iOS-dimiss-error-info.html" class="btn-link">
+                                <h2>iOS-解决警告“ld: warning: directory not found for option”</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 5 Apr 2017</span>
+                            </div>
+                            <p>
+                                从项目中删除了某个目录、文件以后，编译出现警告信息：
+
+ld: warning: directory not found for option“XXXXXX”
+
+
+
+很奇怪，为什么已经从项目中删...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">Objective-C</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/05/iOS-dimiss-error-info.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            <li>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="ibox">
+                        <div class="ibox-content">
+                            <a href="//ios/2017/04/05/iOS-How-to-play-sound.html" class="btn-link">
+                                <h2>iOS-把文字转换成语音播报</h2>
+                            </a>
+                            <div class="small m-b-xs">
+                                <strong>陈国亮</strong> <span class="text-muted"><i class="fa fa-clock-o"></i> 5 Apr 2017</span>
+                            </div>
+                            <p>
+                                AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:@"八百标兵奔北坡，北坡炮兵并排跑，炮兵怕把标兵...
+                            </p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    
+                                    <button class="btn btn-white btn-xs">iOS</button>
+                                    
+                                    <button class="btn btn-white btn-xs">语音播报</button>
+                                    
+                                    <button class="btn btn-white btn-xs">Objective-C</button>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="small text-right">
+                                        <h5>Stats:</h5>
+                                        <div>
+                                            
+                                            
+                                            <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="http://localhost:4000/ios/2017/04/05/iOS-How-to-play-sound.html">0</span> comments
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+        
+    <div class="col-lg-6 col-lg-offset-6">
+		<div class="pag-holder"></div>
+	</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+	
+	    <!-- Google analytics -->
+
+
+<!-- GrowingIO -->
+
+
+
+
+  <script id="dsq-count-scr" src="//jalpc.disqus.com/count.js" async></script>
+  <script type="text/javascript">
+    var disqusShortName = "陈国亮";
+
+    var disqusPublicKey = "tj2MPaNlHMONwTH5bGDNSXyaBpW7q282MeUzh5CwcjJerNhK8Kxk3aWo7IckzTX7";
+
+    var urlArray = [];
+    $('.disqus-comment-count').each(function () {
+      var url = $(this).attr('data-disqus-url');
+      urlArray.push('link:' + url);
+    });
+    $.ajax({
+      type: 'GET',
+      url: "https://disqus.com/api/3.0/threads/set.jsonp",
+      data: { api_key: disqusPublicKey, forum : disqusShortName, thread : urlArray },
+      cache: false,
+      dataType: "jsonp",
+      success: function (result) {
+        for (var i in result.response) {
+          var count = result.response[i].posts;
+          if ( count ) {
+            $('.disqus-comment-count[data-disqus-url="' + result.response[i].link + '"]').html(count);
+          }
+        }
+      }
+    });
+</script>
+
+
+	
+
+</body>
+</html>

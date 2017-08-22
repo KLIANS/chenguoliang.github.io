@@ -1,0 +1,131 @@
+Searching 186 files for "广西"
+
+0 matches across 0 files
+
+
+Searching 186 files for "金蜜蜂"
+
+/Users/Desktop/Blog/_data/index/careers.yml:
+    3  
+    4  - name:
+    5:     detail: 广州金蜜蜂网络科技有限公司
+    6      i18n: company_b
+    7    desc:
+
+/Users/Desktop/Blog/_data/index/projects.yml:
+    6    i18n: familycode
+    7    img: /static/assets/img/landing/ainiuguLogo.png
+    8:   desc: 本人所负责的APP项目之一.</br>爱牛股是由广州金蜜蜂网络科技专为股民推出的一款炒股资讯平台。爱牛股致力于为投资者提供专业、合规、便捷的投资服务。
+    9    url: https://itunes.apple.com/cn/app/%E7%88%B1%E7%89%9B%E8%82%A1-%E5%A4%A7%E6%95%B0%E6%8D%AE%E8%AF%8A%E8%82%A1-%E7%82%92%E8%82%A1%E9%AB%98%E6%89%8B%E7%A4%BE%E5%8C%BA/id1158645929?l=en&mt=8
+   10  
+
+/Users/Desktop/Blog/_site/index.html:
+  223                      </div>
+  224                      <div class="vertical-timeline-content wow  rotateInUpRight ">
+  225:                         <h2><span data-i18n="career.company_b">广州金蜜蜂网络科技有限公司</span></h2>
+  226                          <p><span data-i18n="career.company_b_desc">1、负责公司iPhone客户端软件的开发，参与项目需求分析。</br>2、按计划完成产品的代码编写和单元测试。</br>3、对iOS平台开发技术进行研究。</br>4、提供产品相关技术支持。 </span></p>
+  227                          <span class="vertical-date"><span data-i18n="career.company_b_date"> 2016年10月 - 至今 </span>
+  ...
+  346                    
+  347                    </h4>
+  348:                   <p><span data-i18n="projects.familycode">本人所负责的APP项目之一.</br>爱牛股是由广州金蜜蜂网络科技专为股民推出的一款炒股资讯平台。爱牛股致力于为投资者提供专业、合规、便捷的投资服务。</span></p>
+  349                    
+  350                </div>
+
+4 matches across 3 files
+
+
+Searching 186 files for "毕业于"
+
+/Users/Desktop/Blog/_data/index/careers.yml:
+   45  
+   46  - name:
+   47:     detail: 毕业于佛山科学技术学院
+   48      i18n: company_a
+   49    desc:
+
+/Users/Desktop/Blog/_site/index.html:
+  260                      </div>
+  261                      <div class="vertical-timeline-content wow  rotateInUpRight ">
+  262:                         <h2><span data-i18n="career.company_a">毕业于佛山科学技术学院</span></h2>
+  263                          <p><span data-i18n="career.company_a_desc">物联网应用技术 </span></p>
+  264                          <span class="vertical-date"><span data-i18n="career.company_a_date"> 2011年9月 - 2015年6月 </span>
+
+2 matches across 2 files
+
+
+Searching 186 files for "company_b"
+
+/Users/Desktop/Blog/_data/index/careers.yml:
+    4  - name:
+    5      detail: 广州金蜜蜂网络科技有限公司
+    6:     i18n: company_b
+    7    desc:
+    8      detail: 1、负责公司iPhone客户端软件的开发，参与项目需求分析。</br>2、按计划完成产品的代码编写和单元测试。</br>3、对iOS平台开发技术进行研究。</br>4、提供产品相关技术支持。
+    9:     i18n: company_b_desc
+   10    date:
+   11      detail: 2016年10月 - 至今
+   12:     i18n: company_b_date
+   13    job:
+   14      detail: iOS软件开发工程师
+   15:     i18n: company_b_job
+   16    icon: fa-plus-square
+   17  
+   18    - name:
+   19      detail:  广州市禾京信息科技有限公司
+   20:     i18n: company_b
+   21    desc:
+   22      detail: 1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.
+   23:     i18n: company_b_desc
+   24    date:
+   25      detail: 2016年3月 - 2016年10月
+   26:     i18n: company_b_date
+   27    job:
+   28      detail: iOS软件开发组长
+   29:     i18n: company_b_job
+   30    icon: fa-plus-square
+   31  
+   32  - name:
+   33      detail: 广东三优教育科技有限公司
+   34:     i18n: company_b
+   35    desc:
+   36      detail: 1、负责公司iPhone客户端软件的开发，参与项目需求分析。</br>2、按计划完成产品的代码编写和单元测试。</br>3、对iOS平台开发技术进行研究。</br>4、提供产品相关技术支持。
+   37:     i18n: company_b_desc
+   38    date:
+   39      detail: 2014年5月 - 2016年1月
+   40:     i18n: company_b_date
+   41    job:
+   42      detail: iOS软件开发工程师
+   43:     i18n: company_b_job
+   44    icon: fa-plus-square
+   45  
+
+/Users/Desktop/Blog/_site/index.html:
+  223                      </div>
+  224                      <div class="vertical-timeline-content wow  rotateInUpRight ">
+  225:                         <h2><span data-i18n="career.company_b">广州金蜜蜂网络科技有限公司</span></h2>
+  226:                         <p><span data-i18n="career.company_b_desc">1、负责公司iPhone客户端软件的开发，参与项目需求分析。</br>2、按计划完成产品的代码编写和单元测试。</br>3、对iOS平台开发技术进行研究。</br>4、提供产品相关技术支持。 </span></p>
+  227:                         <span class="vertical-date"><span data-i18n="career.company_b_date"> 2016年10月 - 至今 </span>
+  228:                         <br/> <small><span data-i18n="career.company_b_job">iOS开发工程师</span></small> </span>
+  229                      </div>
+  230                  </div>
+  ...
+  235                      </div>
+  236                      <div class="vertical-timeline-content wow  rotateInUpLeft ">
+  237:                         <h2><span data-i18n="career.company_b">广州市禾京信息科技有限公司</span></h2>
+  238:                         <p><span data-i18n="career.company_b_desc">1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能. </span></p>
+  239:                         <span class="vertical-date"><span data-i18n="career.company_b_date"> 2016年3月 - 2016年10月 </span>
+  240:                         <br/> <small><span data-i18n="career.company_b_job">iOS开发组长</span></small> </span>
+  241                      </div>
+  242                  </div>
+  ...
+  247                      </div>
+  248                      <div class="vertical-timeline-content wow  rotateInUpLeft ">
+  249:                         <h2><span data-i18n="career.company_b">广东三优教育科技有限公司</span></h2>
+  250:                         <p><span data-i18n="career.company_b_desc">1、负责公司iPhone客户端软件的开发，参与项目需求分析。</br>2、按计划完成产品的代码编写和单元测试。</br>3、对iOS平台开发技术进行研究。</br>4、提供产品相关技术支持。 </span></p>
+  251:                         <span class="vertical-date"><span data-i18n="career.company_b_date"> 2014年5月 - 2016年1月 </span>
+  252:                         <br/> <small><span data-i18n="career.company_b_job">iOS开发工程师</span></small> </span>
+  253                      </div>
+  254                  </div>
+
+24 matches across 2 files
