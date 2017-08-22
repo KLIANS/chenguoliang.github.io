@@ -36,7 +36,19 @@
   i18n: familycode
   img: /static/assets/img/landing/ainiuguLogo.png
   desc: 育儿大师，是三优亲子网旗下母婴健康医疗APP。通过线上预约，线下咨询的方式，为广大网友提供的妇幼医疗服务。完成预约咨询流程只需要简单5步。安全，专业，省心。使用干货育儿微课视频每日更新，全国三甲妇幼名医坐镇，快速解决育儿烦恼。
-  url: https://itunes.apple.com/cn/app/%E7%88%B1%E7%89%9B%E8%82%A1-%E5%A4%A7%E6%95%B0%E6%8D%AE%E8%AF%8A%E8%82%A1-%E7%82%92%E8%82%A1%E9%AB%98%E6%89%8B%E7%A4%BE%E5%8C%BA/id1158645929?l=en&mt=8
+  url: https://itunes.apple.com/cn/app/%E8%82%B2%E5%84%BF%E5%A4%A7%E5%B8%88/id1052071019?mt=8
+
+- name: 育儿大师专家版 
+  i18n: familycode
+  img: /static/assets/img/landing/ainiuguLogo.png
+  desc: 育儿大师，是三优亲子网旗下母婴健康医疗APP。育儿大师，医生根据自己时间，自由排班。排多少班，排在什么时候，自由掌控。再也不用担心有看不完的患者，再也不用头疼怎么用最短的时间结束咨询又能让患者满意。互联网+时代，育儿大师是你的名医个人品牌诊室！ 
+  url: https://itunes.apple.com/cn/app/%E8%82%B2%E5%84%BF%E5%A4%A7%E5%B8%88%E4%B8%93%E5%AE%B6%E7%89%88/id1052060188?mt=8
+
+- name: 妈妈FM
+  i18n: familycode
+  img: /static/assets/img/landing/ainiuguLogo.png
+  desc: 妈妈FM，是三优亲子网旗下母婴健康医疗APP。育儿的道理，用沉淀的心来回味，亲自的故事，需宁静的时光品读，情感的哲学，温暖的我为你细述。
+  url: https://itunes.apple.com/cn/app/%E5%A6%88%E5%A6%88fm/id1052071283?mt=8
 
 - name: MyBlog
   i18n: jalpc
