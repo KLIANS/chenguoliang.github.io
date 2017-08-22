@@ -50,6 +50,12 @@
   desc: 妈妈FM，是三优亲子网旗下母婴健康医疗APP。育儿的道理，用沉淀的心来回味，亲自的故事，需宁静的时光品读，情感的哲学，温暖的我为你细述。
   url: https://itunes.apple.com/cn/app/%E5%A6%88%E5%A6%88fm/id1052071283?mt=8
 
+- name: 好享瘦
+  i18n: familycode
+  img: /static/assets/img/landing/MmFm.png
+  desc: 好享瘦，是绿瘦健康产业集团有限公司旗下一款健康瘦身APP.专业瘦，体重管理者必备APP，专业饮食运动方案制定，体重管理师在线指导，让曲线、健康更近你一步。智能体脂测量 指标精准展现——通过智能硬件+APP形式，精准测量12项身体指标，清晰精准展现，管理专业方便。 
+  url: https://itunes.apple.com/cn/app/好享瘦-健康减肥运动记录软件/id1119860302?mt=8
+
 - name: MyBlog
   i18n: jalpc
   gh_user: KLIANS
