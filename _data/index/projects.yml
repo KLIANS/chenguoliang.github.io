@@ -69,8 +69,17 @@
   i18n: jalpc
   gh_user: KALIANS
   repo: projectBaseFramework
-  img: /static/assets/img/landing/live.png
+  img: /static/assets/img/landing/baseProject.png
   desc: The project framework.
+  star: _3
+  fork: _1
+
+- name: 快速集成观看直播和开播 
+  i18n: jalpc
+  gh_user: KALIANS
+  repo: live
+  img: /static/assets/img/landing/live.png
+  desc: Rapid integration and started watching live.
   star: _3
   fork: _1
 
