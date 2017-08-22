@@ -65,6 +65,15 @@
   star: _2
   fork: _1
 
+- name: ProjectBaseFramework
+  i18n: jalpc
+  gh_user: KALIANS
+  repo: projectBaseFramework
+  img: /static/assets/img/landing/live.png
+  desc: The project framework.
+  star: _3
+  fork: _1
+
 - name: KRPopupview
   i18n: jalpc
   gh_user: KLIANS
