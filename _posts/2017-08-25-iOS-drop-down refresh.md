@@ -31,19 +31,21 @@ icon: icon-html
 
     typedef NS_ENUM(NSInteger, PGRefreshState) {
 
-    PGRefreshState_Normal = 0,
+        PGRefreshState_Normal = 0,
 
-    PGRefreshState_Pulling,
+        PGRefreshState_Pulling,
 
-    PGRefreshState_Loading,
+        PGRefreshState_Loading,
 
-    PGRefreshState_Stopped,
+        PGRefreshState_Stopped,
 
-    PGRefreshState_Dragging
+        PGRefreshState_Dragging
 
     };
 
->###refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
+>
+
+refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
     我采用delegate的方式
 
     @protocol PGRefreshViewDelegate <NSObject>
@@ -53,7 +55,9 @@ icon: icon-html
     
     @end
 
->###定义BaseRefreshView类，不同样式的下拉刷新都继承它，子类只需根据状态作相应的UI动作。
+>
+
+定义BaseRefreshView类，不同样式的下拉刷新都继承它，子类只需根据状态作相应的UI动作。
 
     @interface PGBaseRefreshView : UIView
     @property(nonatomic, assign)float mPullingDistance;
