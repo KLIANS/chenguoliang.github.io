@@ -9,7 +9,7 @@ tags: [iOS,Objective-C]
 icon: icon-html
 ---
 
-*下拉刷新模块基本上已经是app中不可缺少的模块，而且网络上开源的多样的下拉刷新控件已经很多，一般随便到网上下载一个改改就能放到自己的项目中。
+下拉刷新模块基本上已经是app中不可缺少的模块，而且网络上开源的多样的下拉刷新控件已经很多，一般随便到网上下载一个改改就能放到自己的项目中。
 假如想自己开发一个下拉刷新的模块集成到自己的项目中应该注意哪些呢？
 
 是否模块化，方便集成；
@@ -25,14 +25,22 @@ icon: icon-html
 大部分情况下拉刷新都是用在UITableView中，设计这个模块的时候也打算针对tableView，后来想想在特定的UI页面中，可能不是tableview而是webview或者scrollView需要下拉刷新功能。所以我决定将UIScrollView类进行扩展。
     
 实现：
-定义下拉刷新过程中的状态*
+定义下拉刷新过程中的状态
 
-    typedef NS_ENUM(NSInteger, PGRefreshState) {<br />
-    PGRefreshState_Normal = 0,<br />
-    PGRefreshState_Pulling,<br />
-    PGRefreshState_Loading,<br />
-    PGRefreshState_Stopped,<br />
-    PGRefreshState_Dragging<br />
+***
+
+    typedef NS_ENUM(NSInteger, PGRefreshState) {
+
+    PGRefreshState_Normal = 0,
+
+    PGRefreshState_Pulling,
+
+    PGRefreshState_Loading,
+
+    PGRefreshState_Stopped,
+
+    PGRefreshState_Dragging
+
     };
 
 >###refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
