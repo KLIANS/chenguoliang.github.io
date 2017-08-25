@@ -43,9 +43,7 @@ icon: icon-html
 
     };
 
->
-
-refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
+>refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
     我采用delegate的方式
 
     @protocol PGRefreshViewDelegate <NSObject>
@@ -55,9 +53,7 @@ refreshView在满足触发刷新条件时，通知外部作出响应（加载网
     
     @end
 
->
-
-定义BaseRefreshView类，不同样式的下拉刷新都继承它，子类只需根据状态作相应的UI动作。
+>定义BaseRefreshView类，不同样式的下拉刷新都继承它，子类只需根据状态作相应的UI动作。
 
     @interface PGBaseRefreshView : UIView
     @property(nonatomic, assign)float mPullingDistance;
@@ -78,7 +74,7 @@ refreshView在满足触发刷新条件时，通知外部作出响应（加载网
     
     @end
 
->###接下来就是对类UIScrollView进行扩展
+>接下来就是对类UIScrollView进行扩展
 
     #import <UIKit/UIKit.h>
     #import "PGBaseRefreshView.h"
@@ -141,7 +137,7 @@ refreshView在满足触发刷新条件时，通知外部作出响应（加载网
     
     @end
     
->###添加方式(部分代码段)
+>添加方式(部分代码段)
     
     table.bPullDownEnable = bEnableRefreshHead;
     table.bLoadMoreEnable = bLoadMore;
@@ -157,7 +153,7 @@ refreshView在满足触发刷新条件时，通知外部作出响应（加载网
     table.moreView.hidden = YES;
     }
     
->###这时你会发现上面代码如何快速更换下拉刷新样式了吧。
+>这时你会发现上面代码如何快速更换下拉刷新样式了。
 
     #pragma mark - UIScrollViewDelegate
     - (void)scrollViewDidScroll:(UIScrollView *)scrollView
