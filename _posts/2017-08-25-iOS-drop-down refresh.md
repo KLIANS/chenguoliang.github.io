@@ -26,8 +26,8 @@ icon: icon-html
     
     实现：
     定义下拉刷新过程中的状态
->###
-    typedef NS_ENUM(NSInteger, PGRefreshState) {
+
+>###typedef NS_ENUM(NSInteger, PGRefreshState) {
     PGRefreshState_Normal = 0,
     PGRefreshState_Pulling,
     PGRefreshState_Loading,
