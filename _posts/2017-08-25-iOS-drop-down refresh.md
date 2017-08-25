@@ -16,7 +16,7 @@ icon: icon-html
     刷新样式是否方便替换；
     能否支持ScrollView；
 
->###思路：
+    思路：
     模块化，这就需要下拉刷新操作过程中的一些状态改变都在RefreshView中进行；
     方便集成，我采用直接addsubview的方式，然后再用delegate回调。
     
@@ -24,7 +24,7 @@ icon: icon-html
     
     大部分情况下拉刷新都是用在UITableView中，设计这个模块的时候也打算针对tableView，后来想想在特定的UI页面中，可能不是tableview而是webview或者scrollView需要下拉刷新功能。所以我决定将UIScrollView类进行扩展。
     
->###实现：
+    实现：
     定义下拉刷新过程中的状态
 
     typedef NS_ENUM(NSInteger, PGRefreshState) {
@@ -35,9 +35,8 @@ icon: icon-html
     PGRefreshState_Dragging
     };
 
-    refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
-
->###我采用delegate的方式
+>###refreshView在满足触发刷新条件时，通知外部作出响应（加载网络数据），还需知道外部情况（是否正在加载数据）。
+    我采用delegate的方式
 
     @protocol PGRefreshViewDelegate <NSObject>
     @required
