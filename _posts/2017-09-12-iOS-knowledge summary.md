@@ -17,6 +17,12 @@ icon: icon-html
 
     [[UIApplication sharedApplication] performSelector:@selector(suspend)];
 
-suspend的英文意思有：暂停; 悬; 挂; 延缓;
+    suspend的英文意思有：暂停; 悬; 挂; 延缓;
 
+> 二、带有中文的URL处理。
+> 大概举个例子，类似下面的URL，里面直接含有中文，可能导致播放不了，那么我们要处理一个这个URL，因为他太操蛋了，居然用中文。
+    http://static.tripbe.com/videofiles/视频/我的自拍视频.mp4
+    NSString *path  = (__bridge_transfer NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(NULL,                                                                                                          (__bridge CFStringRef)model.mp4_url,                                                                         CFSTR(""),                                                                                                    CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+
+    
 
