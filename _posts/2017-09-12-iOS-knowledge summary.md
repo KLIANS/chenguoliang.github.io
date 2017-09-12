@@ -33,56 +33,56 @@ icon: icon-html
     } 
 
 >四、给UIView设置图片（UILabel一样适用）
-   第一种方法： 
+第一种方法： 
    利用的UIView的设置背景颜色方法，用图片做图案颜色，然后传给背景颜色。
-    UIColor *bgColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bgImg.png"];
-    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,480)];
-    [myView setBackGroundColor:bgColor];
+         UIColor *bgColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bgImg.png"];
+         UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,480)];
+         [myView setBackGroundColor:bgColor];
     
-    第二种方法：
-    UIImage *image = [UIImage imageNamed:@"yourPicName@2x.png"];
-    yourView.layer.contents = (__bridge id)image.CGImage;
-    //设置显示的图片范围
-    yourView.layer.contentsCenter = CGRectMake(0.25,0.25,0.5,0.5);//四个值在0-1之间，对应的为x，y，width，height。
+第二种方法：
+     UIImage *image = [UIImage imageNamed:@"yourPicName@2x.png"];
+     yourView.layer.contents = (__bridge id)image.CGImage;
+     //设置显示的图片范围
+     yourView.layer.contentsCenter = CGRectMake(0.25,0.25,0.5,0.5);//四个值在0-1之间，对应的为x，y，width，height。
 
 
 >五、去掉UITableView多余的分割线
     yourTableView.tableFooterView = [UIView new];
 
 >六、调整cell分割线的位置，两个方法一起用，暴力解决，防脱发
-    -(void)viewDidLayoutSubviews {
+     -(void)viewDidLayoutSubviews {
 
-        if ([self.mytableview respondsToSelector:@selector(setSeparatorInset:)]) {
+         if ([self.mytableview respondsToSelector:@selector(setSeparatorInset:)]) {
             [self.mytableview setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
 
          }
-        if ([self.mytableview respondsToSelector:@selector(setLayoutMargins:)])  {
+         if ([self.mytableview respondsToSelector:@selector(setLayoutMargins:)])  {
             [self.mytableview setLayoutMargins:UIEdgeInsetsMake(0, 0, 0, 0)];
-        }
+         }
      }
 
-    #pragma mark - cell分割线
-    - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-    {
-        if ([cell respondsToSelector:@selector(setSeparatorInset:)]){
+     #pragma mark - cell分割线
+     - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+     {
+         if ([cell respondsToSelector:@selector(setSeparatorInset:)]){
              [cell setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
-        }
-        if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
-         [cell setLayoutMargins:UIEdgeInsetsMake(0, 0, 0, 0)];
+         }
+         if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+            [cell setLayoutMargins:UIEdgeInsetsMake(0, 0, 0, 0)];
+         }
      }
-    }
 
 
 >七、UISearchController和UISearchBar的Cancle按钮改title问题，简单粗暴
-    - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
-    {
+     - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+     {
         searchController.searchBar.showsCancelButton = YES;
         UIButton *canceLBtn = [searchController.searchBar valueForKey:@"cancelButton"];
         [canceLBtn setTitle:@"取消" forState:UIControlStateNormal];
         [canceLBtn setTitleColor:[UIColor colorWithRed:14.0/255.0 green:180.0/255.0 blue:0.0/255.0 alpha:1.00] forState:UIControlStateNormal];
         searchBar.showsCancelButton = YES;
         return YES;
-    }
+     }
 
 >八、UITableView收起键盘
     一个属性搞定，效果好（UIScrollView同样可以使用） 
