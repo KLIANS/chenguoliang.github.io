@@ -33,13 +33,13 @@ icon: icon-html
     } 
 
 >四、给UIView设置图片（UILabel一样适用）
-第一种方法： 
-   利用的UIView的设置背景颜色方法，用图片做图案颜色，然后传给背景颜色。
+     第一种方法： 
+     利用的UIView的设置背景颜色方法，用图片做图案颜色，然后传给背景颜色。
          UIColor *bgColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bgImg.png"];
          UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,480)];
          [myView setBackGroundColor:bgColor];
     
-第二种方法：
+     第二种方法：
      UIImage *image = [UIImage imageNamed:@"yourPicName@2x.png"];
      yourView.layer.contents = (__bridge id)image.CGImage;
      //设置显示的图片范围
@@ -85,10 +85,10 @@ icon: icon-html
      }
 
 >八、UITableView收起键盘
-    一个属性搞定，效果好（UIScrollView同样可以使用） 
-    以前是不是觉得[self.view endEditing:YES];很屌，这个下面的更屌。 
-    yourTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-    另外一个枚举为UIScrollViewKeyboardDismissModeInteractive，表示在键盘内部滑动，键盘逐渐下去。
+     一个属性搞定，效果好（UIScrollView同样可以使用） 
+     以前是不是觉得[self.view endEditing:YES];很屌，这个下面的更屌。 
+     yourTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+     另外一个枚举为UIScrollViewKeyboardDismissModeInteractive，表示在键盘内部滑动，键盘逐渐下去。
 
 >九、NSTimer  
     1、NSTimer计算的时间并不精确 
