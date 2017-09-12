@@ -101,8 +101,8 @@ icon: icon-html
     瞬间无语。（只有UIView才能设置大小，VC是控制器啊，哥！）
 
 >十一、用十六进制获取UIColor（类方法或者Category都可以，这里我用工具类方法）
-    + (UIColor *)colorWithHexString:(NSString *)color
-    {
+     + (UIColor *)colorWithHexString:(NSString *)color
+     {
         NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
 
         // String should be 6 or 8 characters
@@ -141,12 +141,12 @@ icon: icon-html
         [[NSScanner scannerWithString:bString] scanHexInt:&b];
 
          return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
-    }
+     }
 
 
 >十二、获取今天是星期几
-    + (NSString *) getweekDayStringWithDate:(NSDate *) date
-    {
+     + (NSString *) getweekDayStringWithDate:(NSDate *) date
+     {
         NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]; // 指定日历的算法
         NSDateComponents *comps = [calendar components:NSWeekdayCalendarUnit fromDate:date];
 
@@ -203,7 +203,7 @@ icon: icon-html
         }
         return weekDayString;
 
-    }
+     }
 
 
 >十三、UIView的部分圆角问题
@@ -314,7 +314,7 @@ icon: icon-html
 
 
 >二十、强制让App直接退出（非闪退，非崩溃）
-    - (void)exitApplication {
+     - (void)exitApplication {
         AppDelegate *app = [UIApplication sharedApplication].delegate;
         UIWindow *window = app.window;
         [UIView animateWithDuration:1.0f animations:^{
@@ -322,17 +322,17 @@ icon: icon-html
         } completion:^(BOOL finished) {
             exit(0);
         }];
-    }
+     }
 
 
 >二十一、Label行间距
      NSMutableAttributedString *attributedString =    
-   [[NSMutableAttributedString alloc] initWithString:self.contentLabel.text];
-    NSMutableParagraphStyle *paragraphStyle =  [[NSMutableParagraphStyle alloc] init];  
-   [paragraphStyle setLineSpacing:3];
+     [[NSMutableAttributedString alloc] initWithString:self.contentLabel.text];
+     NSMutableParagraphStyle *paragraphStyle =  [[NSMutableParagraphStyle alloc] init];  
+     [paragraphStyle setLineSpacing:3];
 
     //调整行间距       
-   [attributedString addAttribute:NSParagraphStyleAttributeName 
+     [attributedString addAttribute:NSParagraphStyleAttributeName 
                          value:paragraphStyle 
                          range:NSMakeRange(0, [self.contentLabel.text length])];
      self.contentLabel.attributedText = attributedString;
@@ -370,21 +370,21 @@ icon: icon-html
 >二十七、禁止textField和textView的复制粘贴菜单 
     这里有一个误区，很多同学直接使用UITextField，然后在VC里面写这个方法，返回NO，没效果。怎么搞都不行，但是如果用UIPasteboard的话，项目中所有的编辑框都不能复制黏贴了，真操蛋。 
     我们要做的是新建一个类MyTextField继承UITextField，然后在MyTextField的.m文件里重写这个方法，就可以单独控制某个输入框了。
-    -(BOOL)canPerformAction:(SEL)action withSender:(id)sender
-    {
+     -(BOOL)canPerformAction:(SEL)action withSender:(id)sender
+     {
         if ([UIMenuController sharedMenuController]) {
           [UIMenuController sharedMenuController].menuVisible = NO;
         }
         return NO;
-    }
+     }
 
 
 >二十八、如何进入我的软件在app store 的页面，先用iTunes Link Maker找到软件在访问地址，格式为itms-apps://ax.itunes.apple.com/…，然后
-    #define  ITUNESLINK   @"itms-apps://ax.itunes.apple.com/..."
-    NSURL *url = [NSURL URLWithString:ITUNESLINK];
-    if([[UIApplication sharedApplication] canOpenURL:url]){
+     #define  ITUNESLINK   @"itms-apps://ax.itunes.apple.com/..."
+     NSURL *url = [NSURL URLWithString:ITUNESLINK];
+     if([[UIApplication sharedApplication] canOpenURL:url]){
         [[UIApplication sharedApplication] openURL:url];
-    }
+     }
 如果把上述地址中itms-apps改为http就可以在浏览器中打开了。可以把这个地址放在自己的网站里，链接到app store。 
 iTunes Link Maker地址：http://itunes.apple.com/linkmaker
 
@@ -398,15 +398,15 @@ iTunes Link Maker地址：http://itunes.apple.com/linkmaker
 2.统一在基类里面处理 
 新建一个类BaseNavigationController继承UINavigationController，然后重写 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated这个方法。所有的push事件都走此方法。
 
-    @interface BaseNavigationController : UINavigationController
+     @interface BaseNavigationController : UINavigationController
 
-    @end
-    -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
-        if (self.viewControllers.count>0) {
+     @end
+     -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
+         if (self.viewControllers.count>0) {
             viewController.hidesBottomBarWhenPushed = YES;
-        }
-        [super pushViewController:viewController animated:animated];
-    }
+         }
+         [super pushViewController:viewController animated:animated];
+     }
 
 
 >三十、取消系统的返回手势
@@ -417,12 +417,12 @@ iTunes Link Maker地址：http://itunes.apple.com/linkmaker
 1、UIWebView设置字体大小，颜色，字体： 
 UIWebView无法通过自身的属性设置字体的一些属性，只能通过html代码进行设置 
 在webView加载完毕后，在 
-    - (void)webViewDidFinishLoad:(UIWebView *)webView方法中加入js代码  
+     - (void)webViewDidFinishLoad:(UIWebView *)webView方法中加入js代码  
      NSString *str = @"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '60%'";  
      [_webView stringByEvaluatingJavaScriptFromString:str]; 
 或者加入以下代码
-    NSString *jsString = [[NSString alloc] initWithFormat:@"document.body.style.fontSize=%f;document.body.style.color=%@",fontSize,fontColor];   
-    [webView stringByEvaluatingJavaScriptFromString:jsString]; 
+     NSString *jsString = [[NSString alloc] initWithFormat:@"document.body.style.fontSize=%f;document.body.style.color=%@",fontSize,fontColor];   
+     [webView stringByEvaluatingJavaScriptFromString:jsString]; 
 
 
 >三十二、NSString处理技巧 
