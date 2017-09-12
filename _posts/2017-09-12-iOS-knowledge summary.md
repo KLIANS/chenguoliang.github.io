@@ -33,13 +33,14 @@ icon: icon-html
     } 
 
 >四、给UIView设置图片（UILabel一样适用）
-     第一种方法： 
+
+    第一种方法： 
      利用的UIView的设置背景颜色方法，用图片做图案颜色，然后传给背景颜色。
          UIColor *bgColor = [UIColor colorWithPatternImage: [UIImage imageNamed:@"bgImg.png"];
          UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(0,0,320,480)];
          [myView setBackGroundColor:bgColor];
     
-     第二种方法：
+    第二种方法：
      UIImage *image = [UIImage imageNamed:@"yourPicName@2x.png"];
      yourView.layer.contents = (__bridge id)image.CGImage;
      //设置显示的图片范围
@@ -47,9 +48,11 @@ icon: icon-html
 
 
 >五、去掉UITableView多余的分割线
+
     yourTableView.tableFooterView = [UIView new];
 
 >六、调整cell分割线的位置，两个方法一起用，暴力解决，防脱发
+
      -(void)viewDidLayoutSubviews {
 
          if ([self.mytableview respondsToSelector:@selector(setSeparatorInset:)]) {
@@ -74,6 +77,7 @@ icon: icon-html
 
 
 >七、UISearchController和UISearchBar的Cancle按钮改title问题，简单粗暴
+
      - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
      {
         searchController.searchBar.showsCancelButton = YES;
@@ -85,22 +89,26 @@ icon: icon-html
      }
 
 >八、UITableView收起键盘
+
      一个属性搞定，效果好（UIScrollView同样可以使用） 
      以前是不是觉得[self.view endEditing:YES];很屌，这个下面的更屌。 
      yourTableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
      另外一个枚举为UIScrollViewKeyboardDismissModeInteractive，表示在键盘内部滑动，键盘逐渐下去。
 
->九、NSTimer  
+>九、NSTimer 
+
     1、NSTimer计算的时间并不精确 
     2、NSTimer需要添加到runLoop运行才会执行，但是这个runLoop的线程必须是已经开启。 
     3、NSTimer会对它的tagert进行retain，我们必须对其重复性的使用intvailte停止。target如果是self（指UIViewController），那么VC的retainCount+1，如果你不释放NSTimer，那么你的VC就不会dealloc了，内存泄漏了。
 
 
 >十、UIViewController没用大小(frame) 
+
     经常有人在群里问：怎么改变VC的大小啊？ 
     瞬间无语。（只有UIView才能设置大小，VC是控制器啊，哥！）
 
 >十一、用十六进制获取UIColor（类方法或者Category都可以，这里我用工具类方法）
+
      + (UIColor *)colorWithHexString:(NSString *)color
      {
         NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
@@ -145,6 +153,7 @@ icon: icon-html
 
 
 >十二、获取今天是星期几
+
      + (NSString *) getweekDayStringWithDate:(NSDate *) date
      {
         NSCalendar * calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar]; // 指定日历的算法
@@ -207,6 +216,7 @@ icon: icon-html
 
 
 >十三、UIView的部分圆角问题
+
     UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(120, 10, 80, 80)];
     view2.backgroundColor = [UIColor redColor];
     [self.view addSubview:view2];
@@ -229,10 +239,12 @@ icon: icon-html
 
 
 >十四、设置滑动的时候隐藏navigationBar
+
     navigationController.hidesBarsOnSwipe = Yes;
 
 
 >十五、iOS画虚线 ,记得先 QuartzCore框架的导入
+
     #import <QuartzCore/QuartzCore.h>
 
     CGContextRef context =UIGraphicsGetCurrentContext();  
