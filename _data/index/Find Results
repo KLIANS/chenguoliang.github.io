@@ -38,7 +38,7 @@ Searching 186 files for "金蜜蜂"
 Searching 186 files for "毕业于"
 
 /Users/Desktop/Blog/_data/index/careers.yml:
-   45  
+   45
    46  - name:
    47:     detail: 毕业于佛山科学技术学院
    48      i18n: company_a
@@ -84,7 +84,7 @@ Searching 186 files for "company_b"
    28      detail: iOS软件开发组长
    29:     i18n: company_b_job
    30    icon: fa-plus-square
-   31  
+   31
    32  - name:
    33      detail: 广东三优教育科技有限公司
    34:     i18n: company_b

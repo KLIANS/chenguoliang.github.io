@@ -5,7 +5,7 @@
     detail: 广州墨乎科技有限公司
     i18n: company_b
   desc:
-    detail: iOS岗位：</br>1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.</br></br>项目经理岗位：</br>1、对接客户了解项目需求、制定项目计划.</br>2、组织会议分析项目需求.</br>3、配合美工设计项目原型.</br>4、监督跟进工作任务，把握整个项目的进度情况.</br>5、协调团队关系.
+    detail: </br>1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.</br>8、监督跟进工作任务，把握整个项目的进度情况.
     i18n: company_b_desc
   date:
     detail: 2018年11月 - 至今
@@ -17,16 +17,16 @@
 
 
 - name:
-    detail: 广州一丈网络科技有限公司
+    detail: 广州三优亲子网络科技有限公司
     i18n: company_b
   desc:
-    detail: 1、带领iOS开发组对公司iOS App项目开发, 拆分和分配各任务到各人.</br>2、参与公司项目的需求分析.</br>3、与其他部门协调和确认接口结构.</br>4、搭建项目框架和确定技术选型.</br>5、编写核心功能模块代码.</br>6、处理iOS部门相关事务.</br>7、跟进iOS平台终端技术的更新,设计和实现新产品和功能.
+    detail: 1、参与公司项目的需求分析.</br>2、接口文档编写.</br>3、编写核心功能模块代码.</br>4、测试程序，维护项目.
     i18n: company_b_desc
   date:
     detail: 2016年5月 - 2018年11月
     i18n: company_b_date
   job:
-    detail: iOS软件开发
+    detail: iOS开发
     i18n: company_b_job
   icon: fa-plus-square
 
@@ -34,26 +34,26 @@
       detail:  广州市禾京信息科技有限公司（外包公司）
       i18n: company_b
   desc:
-      detail: 1、公司iOS App项目开发.</br>2、按照项目计划高质量的完成所负责的模块开发以及bug的修复.</br>3、测试程序，维护项目.
+      detail: 1、App项目开发.</br>2、按照项目计划高质量的完成所负责的模块开发以及bug的修复.</br>3、测试程序，维护项目.
       i18n: company_b_desc
   date:
-      detail: 2015年8月 - 2016年4月
+      detail: 2015年6月 - 2016年4月
       i18n: company_b_date
   job:
       detail: iOS软件开发
       i18n: company_b_job
   icon: fa-plus-square
 
-- name:
-    detail: 毕业于佛山技术学院
-    i18n: company_a
-  desc:
-    detail: 物联网应用技术
-    i18n: company_a_desc
-  date:
-    detail: 2012年9月 - 2015年7月
-    i18n: company_a_date
-  job:
-    detail: 学生
-    i18n: company_a_job
-  icon: fa-plus-square
+#- name:
+#    detail: 毕业于佛山技术学院
+#    i18n: company_a
+#  desc:
+#    detail: 物联网应用技术
+#    i18n: company_a_desc
+#  date:
+#    detail: 2012年9月 - 2015年7月
+#    i18n: company_a_date
+#  job:
+#    detail: 学生
+#    i18n: company_a_job
+#  icon: fa-plus-square
