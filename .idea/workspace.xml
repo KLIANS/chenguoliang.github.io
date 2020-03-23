@@ -2,88 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8319e024-f008-4ba6-9e4f-8b375df36558" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/blog/ios/ios-avg.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/blog/ios/ios-avg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/blog/life/忠言.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/blog/life/忠言.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/default.jpg" afterPath="$PROJECT_DIR$/_site/static/assets/img/default.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/favicon.ico" afterPath="$PROJECT_DIR$/_site/static/assets/img/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/ainiuguLogo.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/ainiuguLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/avatar.jpg" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/dh.gif" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/dh.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/githubLogo.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/githubLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/header_one.jpg" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/header_one.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/header_two.jpg" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/header_two.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/jctjLogo.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/jctjLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/jjcLogo.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/jjcLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/keyboardLogo.jpg" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/keyboardLogo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/static/assets/img/landing/pkdsLogo.png" afterPath="$PROJECT_DIR$/_site/static/assets/img/landing/pkdsLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/blog/ios/ios-avg.png" afterPath="$PROJECT_DIR$/static/assets/img/blog/ios/ios-avg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/blog/life/忠言.png" afterPath="$PROJECT_DIR$/static/assets/img/blog/life/忠言.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/default.jpg" afterPath="$PROJECT_DIR$/static/assets/img/default.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/favicon.ico" afterPath="$PROJECT_DIR$/static/assets/img/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/MmFm.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/MmFm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/ainiuguLogo.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/ainiuguLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/avatar.jpg" afterPath="$PROJECT_DIR$/static/assets/img/landing/avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/baseProject.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/baseProject.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/dh.gif" afterPath="$PROJECT_DIR$/static/assets/img/landing/dh.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/githubLogo.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/githubLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/header_one.jpg" afterPath="$PROJECT_DIR$/static/assets/img/landing/header_one.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/header_two.jpg" afterPath="$PROJECT_DIR$/static/assets/img/landing/header_two.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/jctjLogo.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/jctjLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/jjcLogo.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/jjcLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/keyboardLogo.jpg" afterPath="$PROJECT_DIR$/static/assets/img/landing/keyboardLogo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/live.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/live.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/lvShou.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/lvShou.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/pkdsLogo.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/pkdsLogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/yuer_ experts.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/yuer_ experts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/img/landing/yuer_user.png" afterPath="$PROJECT_DIR$/static/assets/img/landing/yuer_user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/KLIANS博客.iml" afterPath="$PROJECT_DIR$/.idea/KLIANS博客.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CNAME" afterPath="$PROJECT_DIR$/CNAME" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/index/Find Results" afterPath="$PROJECT_DIR$/_data/index/Find Results" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/index/careers.yml" afterPath="$PROJECT_DIR$/_data/index/careers.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-05-iOS-How-to-play-sound.md" afterPath="$PROJECT_DIR$/_posts/2017-04-05-iOS-How-to-play-sound.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-05-iOS-c-format.md" afterPath="$PROJECT_DIR$/_posts/2017-04-05-iOS-c-format.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-05-iOS-dimiss-error-info.md" afterPath="$PROJECT_DIR$/_posts/2017-04-05-iOS-dimiss-error-info.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-06-iOS-Screen-rotate-headle.md" afterPath="$PROJECT_DIR$/_posts/2017-04-06-iOS-Screen-rotate-headle.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-06-iOS-jsonkit-error-handle.md" afterPath="$PROJECT_DIR$/_posts/2017-04-06-iOS-jsonkit-error-handle.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-06-life-jj.md" afterPath="$PROJECT_DIR$/_posts/2017-04-06-life-jj.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-07-iOS-array-avg-sum.md" afterPath="$PROJECT_DIR$/_posts/2017-04-07-iOS-array-avg-sum.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-07-iOS-git-command.md" afterPath="$PROJECT_DIR$/_posts/2017-04-07-iOS-git-command.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-07-iOS-web-get-height.md" afterPath="$PROJECT_DIR$/_posts/2017-04-07-iOS-web-get-height.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-04-23-life-finance.md" afterPath="$PROJECT_DIR$/_posts/2017-04-23-life-finance.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-05-04-iOS-navicationbar-transparency.md" afterPath="$PROJECT_DIR$/_posts/2017-05-04-iOS-navicationbar-transparency.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-08-25-iOS-drop-down refresh.md" afterPath="$PROJECT_DIR$/_posts/2017-08-25-iOS-drop-down refresh.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-09-12-iOS-knowledge summary.md" afterPath="$PROJECT_DIR$/_posts/2017-09-12-iOS-knowledge summary.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/404.html" afterPath="$PROJECT_DIR$/_site/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/CNAME" afterPath="$PROJECT_DIR$/_site/CNAME" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/blog/index.html" afterPath="$PROJECT_DIR$/_site/blog/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/c/2017/04/10/iOS-c-format.html" afterPath="$PROJECT_DIR$/_site/c/2017/04/10/iOS-c-format.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/c/index.html" afterPath="$PROJECT_DIR$/_site/c/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/donate/index.html" afterPath="$PROJECT_DIR$/_site/donate/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/05/iOS-How-to-play-sound.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/05/iOS-How-to-play-sound.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/05/iOS-dimiss-error-info.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/05/iOS-dimiss-error-info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/06/iOS-Screen-rotate-headle.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/06/iOS-Screen-rotate-headle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/06/iOS-jsonkit-error-handle.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/06/iOS-jsonkit-error-handle.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-array-avg-sum.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-array-avg-sum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-git-command.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-git-command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-web-get-height.html" afterPath="$PROJECT_DIR$/_site/ios/2017/04/07/iOS-web-get-height.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/2017/05/04/iOS-navicationbar-transparency.html" afterPath="$PROJECT_DIR$/_site/ios/2017/05/04/iOS-navicationbar-transparency.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/ios/index.html" afterPath="$PROJECT_DIR$/_site/ios/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/life/2017/04/06/life-jj.html" afterPath="$PROJECT_DIR$/_site/life/2017/04/06/life-jj.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/life/2017/04/23/life-finance.html" afterPath="$PROJECT_DIR$/_site/life/2017/04/23/life-finance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/life/index.html" afterPath="$PROJECT_DIR$/_site/life/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/reading/index.html" afterPath="$PROJECT_DIR$/_site/reading/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/robots.txt" afterPath="$PROJECT_DIR$/_site/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/search/cb-search.json" afterPath="$PROJECT_DIR$/_site/search/cb-search.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/sitemap.xml" afterPath="$PROJECT_DIR$/_site/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/c.html" afterPath="$PROJECT_DIR$/blog/c.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/ios.html" afterPath="$PROJECT_DIR$/blog/ios.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/reading.html" afterPath="$PROJECT_DIR$/blog/reading.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -117,8 +37,8 @@
       <file leaf-file-name="careers.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/index/careers.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -343,12 +263,12 @@
       <workItem from="1563268383158" duration="3170000" />
       <workItem from="1583466950868" duration="576000" />
       <workItem from="1584785579682" duration="1204000" />
-      <workItem from="1584932145535" duration="1755000" />
+      <workItem from="1584932145535" duration="1978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7289000" />
+    <option name="totallyTimeSpent" value="7512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="169" width="1210" height="737" extended-state="0" />
@@ -463,8 +383,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/index/careers.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding />
         </state>
       </provider>
