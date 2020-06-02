@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: 要想看得远，你就得站的越高，然后你会发现，贼TM冷！    # Describe yourself.
+  desc: 常常是最后一把钥匙打开了门    # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
